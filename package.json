@@ -27,7 +27,7 @@
         "verification": {
           "url": "https://account.easynews.com/editinfo.php",
           "method": "GET",
-          "responseType": "json",
+          "responseType": "text",
           "extract": {
             "username": {
               "type": "regex",
@@ -81,15 +81,7 @@
           ]
         }
       ],
-      "playbackFileName": "name",
-      "playbackFileName:ops": [
-        {
-          "name": "regex",
-          "params": [
-            "^(.+)\\\\n"
-          ]
-        }
-      ],
+      "playbackFileName": "behaviorHints.fileName",
       "playbackFileSize": "behaviorHints.videoSize"
     },
     "original_package": "Easynews"

@@ -41,15 +41,7 @@
           ]
         }
       ],
-      "playbackFileName": "name",
-      "playbackFileName:ops": [
-        {
-          "name": "regex",
-          "params": [
-            "^(.+)\\\\n"
-          ]
-        }
-      ],
+      "playbackFileName": "behaviorHints.fileName",
       "playbackFileSize": "behaviorHints.videoSize"
     },
     "original_package": "Easynews"
