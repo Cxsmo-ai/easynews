@@ -19,7 +19,7 @@ https://cxsmo-ai.github.io/easynews/manifest.json
 The package manifest points Syncler to this package data:
 
 ```
-https://cxsmo-ai.github.io/easynews/package.json
+https://cxsmo-ai.github.io/easynews/express.json
 ```
 
 You need an Easynews account in Syncler because the package uses the `managedAccounts.easynews` username/password placeholders.
@@ -28,5 +28,6 @@ You need an Easynews account in Syncler because the package uses the `managedAcc
 
 - `vendor.json` - Syncler v2 vendor URL to add in Syncler.
 - `manifest.json` - Syncler express package manifest.
-- `package.json` - Syncler express package data.
+- `express.json` - Syncler express package data.
+- `package.json` - Backwards-compatible copy of the express package data.
 - `@config/` - lightweight install page based on the JakedUp repo structure.

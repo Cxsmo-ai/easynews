@@ -1,44 +1,4 @@
 {
-  "_manifest": {
-    "name": "Easynews",
-    "id": "com.easynews.syncler",
-    "version": 1,
-    "classPath": "",
-    "type": "express",
-    "accounts": [
-      {
-        "alias": "easynews",
-        "branding": {
-          "name": "Easynews",
-          "website": "https://easynews.com",
-          "logo": "https://www.easynews.com/assets/img/shared/en-logo.png"
-        },
-        "auth": {
-          "type": "basic",
-          "allowedDomains": [
-            "easynews.com"
-          ],
-          "inject": {
-            "headers": {
-              "Authorization": "Basic {managedAccounts.easynews.basicToken}"
-            }
-          }
-        },
-        "verification": {
-          "url": "https://account.easynews.com/editinfo.php",
-          "method": "GET",
-          "responseType": "json",
-          "extract": {
-            "username": {
-              "type": "regex",
-              "value": ">Username</td><td style=\\\"vertical-align: bottom;\\\" >(.+?)</td>"
-            }
-          }
-        }
-      }
-    ],
-    "url": "https://cxsmo-ai.github.io/easynews/express.json"
-  },
   "easynews": {
     "name": "Easynews",
     "base_url": "https://b89262c192b0-stremio-easynews-addon.baby-beamup.club",

@@ -10,7 +10,7 @@ const App = Vue.createApp({
       packageName: 'Easynews',
       vendorUrl: `${baseUrl}/vendor.json`,
       manifestUrl: `${baseUrl}/manifest.json`,
-      packageUrl: `${baseUrl}/package.json`
+      packageUrl: `${baseUrl}/express.json`
     };
   },
   methods: {

@@ -3,7 +3,6 @@
   "id": "com.easynews.syncler",
   "version": 1,
   "classPath": "",
-  "permaUrl": "https://cxsmo-ai.github.io/easynews/package.json",
   "type": "express",
   "accounts": [
     {
@@ -36,5 +35,6 @@
         }
       }
     }
-  ]
+  ],
+  "url": "https://cxsmo-ai.github.io/easynews/express.json"
 }
