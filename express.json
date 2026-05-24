@@ -1,6 +1,10 @@
 {
   "easynews": {
     "name": "Easynews",
+    "enabled": true,
+    "languages": [
+      "en"
+    ],
     "base_url": "https://b89262c192b0-stremio-easynews-addon.baby-beamup.club",
     "response_type": "json",
     "movie": {
@@ -47,6 +51,7 @@
         }
       ],
       "playbackFileSize": "behaviorHints.videoSize"
-    }
+    },
+    "original_package": "Easynews"
   }
 }

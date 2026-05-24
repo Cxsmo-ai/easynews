@@ -2,7 +2,7 @@
   "_manifest": {
     "name": "Easynews",
     "id": "com.easynews.syncler",
-    "version": 1,
+    "version": 1779652299,
     "classPath": "",
     "type": "express",
     "accounts": [
@@ -41,6 +41,10 @@
   },
   "easynews": {
     "name": "Easynews",
+    "enabled": true,
+    "languages": [
+      "en"
+    ],
     "base_url": "https://b89262c192b0-stremio-easynews-addon.baby-beamup.club",
     "response_type": "json",
     "movie": {
@@ -87,6 +91,7 @@
         }
       ],
       "playbackFileSize": "behaviorHints.videoSize"
-    }
+    },
+    "original_package": "Easynews"
   }
 }
