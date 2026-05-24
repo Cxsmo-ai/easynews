@@ -22,6 +22,14 @@
     "json_format": {
       "results": "streams",
       "url": "url",
+      "url:ops": [
+        {
+          "name": "regex",
+          "params": [
+            ".*@(.+)"
+          ]
+        }
+      ],
       "title": "description",
       "title:ops": [
         {
@@ -37,7 +45,7 @@
         {
           "name": "regex",
           "params": [
-            "http(?:s|)://(.+)/"
+            ".*@([^/]+)"
           ]
         }
       ],

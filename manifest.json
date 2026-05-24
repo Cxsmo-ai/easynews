@@ -1,7 +1,7 @@
 {
   "name": "Easynews",
   "id": "com.easynews.syncler",
-  "version": 1779657300,
+  "version": 1779658311,
   "classPath": "",
   "type": "express",
   "accounts": [
@@ -15,8 +15,7 @@
       "auth": {
         "type": "basic",
         "allowedDomains": [
-          "easynews.com",
-          "baby-beamup.club"
+          "easynews.com"
         ],
         "inject": {
           "headers": {

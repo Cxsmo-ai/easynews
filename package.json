@@ -2,7 +2,7 @@
   "_manifest": {
     "name": "Easynews",
     "id": "com.easynews.syncler",
-    "version": 1779657300,
+    "version": 1779658311,
     "classPath": "",
     "type": "express",
     "accounts": [
@@ -16,8 +16,7 @@
         "auth": {
           "type": "basic",
           "allowedDomains": [
-            "easynews.com",
-            "baby-beamup.club"
+            "easynews.com"
           ],
           "inject": {
             "headers": {
@@ -63,6 +62,14 @@
     "json_format": {
       "results": "streams",
       "url": "url",
+      "url:ops": [
+        {
+          "name": "regex",
+          "params": [
+            ".*@(.+)"
+          ]
+        }
+      ],
       "title": "description",
       "title:ops": [
         {
@@ -78,7 +85,7 @@
         {
           "name": "regex",
           "params": [
-            "http(?:s|)://(.+)/"
+            ".*@([^/]+)"
           ]
         }
       ],
