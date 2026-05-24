@@ -8,7 +8,8 @@ const App = Vue.createApp({
     const baseUrl = `https://raw.githubusercontent.com/${owner}/${repo}/${branch}`;
     return {
       packageName: 'Easynews',
-      vendorUrl: `${baseUrl}/manifest.json`,
+      vendorUrl: `${baseUrl}/vendor.json`,
+      manifestUrl: `${baseUrl}/manifest.json`,
       packageUrl: `${baseUrl}/package.json`
     };
   },

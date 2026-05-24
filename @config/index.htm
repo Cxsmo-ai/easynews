@@ -16,14 +16,14 @@
     <div class="mb-5 border-bottom pb-5">
       <h2 class="mb-4">Syncler v2 Vendor Manifest</h2>
       <p>This repo uses the Easynews package details from the supplied PrivateBin and keeps the simple JakedUp-style install layout.</p>
-      <p>Copy this URL into Syncler:</p>
+      <p>Copy this vendor URL into Syncler:</p>
       <p><a class="c-package-link btn btn-success" :href="vendorUrl">{{ vendorUrl }}</a></p>
       <button class="btn btn-outline-light" type="button" @click="copy(vendorUrl)">Copy Vendor URL</button>
     </div>
     <div class="mb-5 border-bottom pb-5">
-      <h3 class="h5 mb-4 text-decoration-underline">Package URL</h3>
-      <p><a class="c-package-link btn btn-secondary" :href="packageUrl">{{ packageUrl }}</a></p>
-      <button class="btn btn-outline-light" type="button" @click="copy(packageUrl)">Copy Package URL</button>
+      <h3 class="h5 mb-4 text-decoration-underline">Package Manifest URL</h3>
+      <p><a class="c-package-link btn btn-secondary" :href="manifestUrl">{{ manifestUrl }}</a></p>
+      <button class="btn btn-outline-light" type="button" @click="copy(manifestUrl)">Copy Package Manifest URL</button>
     </div>
     <p class="text-muted">You need an Easynews account configured in Syncler for this provider.</p>
   </div>
