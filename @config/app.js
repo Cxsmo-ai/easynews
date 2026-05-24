@@ -3,11 +3,11 @@
 const App = Vue.createApp({
   data() {
     const owner = 'Cxsmo-ai';
-    const repo = 'easyjews';
+    const repo = 'easynews';
     const branch = 'main';
     const baseUrl = `https://raw.githubusercontent.com/${owner}/${repo}/${branch}`;
     return {
-      packageName: 'EasyJews',
+      packageName: 'Easynews',
       vendorUrl: `${baseUrl}/manifest.json`,
       packageUrl: `${baseUrl}/package.json`
     };

@@ -1,8 +1,8 @@
 {
-  "name": "EasyJews",
-  "id": "com.easyjews.syncler",
+  "name": "Easynews",
+  "id": "com.easynews.syncler",
   "version": 1,
-  "url": "https://raw.githubusercontent.com/Cxsmo-ai/easyjews/main/package.json",
+  "url": "https://raw.githubusercontent.com/Cxsmo-ai/easynews/main/package.json",
   "type": "express",
   "accounts": [
     {
