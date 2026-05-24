@@ -6,13 +6,17 @@
   "support": "https://github.com/Cxsmo-ai/easynews/issues",
   "packages": [
     {
-      "manifest": "https://raw.githubusercontent.com/Cxsmo-ai/easynews/main/manifest.json",
+      "manifest": "https://cxsmo-ai.github.io/easynews/manifest.json",
       "description": "Easynews express package"
     }
   ],
   "defaults": {
     "packages": [
-      "https://raw.githubusercontent.com/Cxsmo-ai/easynews/main/manifest.json"
-    ]
-  }
+      "https://cxsmo-ai.github.io/easynews/manifest.json"
+    ],
+    "cacheServer": "cache.bouncy.cc"
+  },
+  "cacheServers": [
+    "cache.bouncy.cc"
+  ]
 }

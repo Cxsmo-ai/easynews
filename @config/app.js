@@ -5,7 +5,7 @@ const App = Vue.createApp({
     const owner = 'Cxsmo-ai';
     const repo = 'easynews';
     const branch = 'main';
-    const baseUrl = `https://raw.githubusercontent.com/${owner}/${repo}/${branch}`;
+    const baseUrl = `https://${owner.toLowerCase()}.github.io/${repo}`;
     return {
       packageName: 'Easynews',
       vendorUrl: `${baseUrl}/vendor.json`,
