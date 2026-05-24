@@ -1,0 +1,39 @@
+{
+  "name": "EasyJews",
+  "id": "com.easyjews.syncler",
+  "version": 1,
+  "url": "https://raw.githubusercontent.com/Cxsmo-ai/easyjews/main/package.json",
+  "type": "express",
+  "accounts": [
+    {
+      "alias": "easynews",
+      "branding": {
+        "name": "Easynews",
+        "website": "https://easynews.com",
+        "logo": "https://www.easynews.com/assets/img/shared/en-logo.png"
+      },
+      "auth": {
+        "type": "basic",
+        "allowedDomains": [
+          "easynews.com"
+        ],
+        "inject": {
+          "headers": {
+            "Authorization": "Basic {managedAccounts.easynews.basicToken}"
+          }
+        }
+      },
+      "verification": {
+        "url": "https://account.easynews.com/editinfo.php",
+        "method": "GET",
+        "responseType": "json",
+        "extract": {
+          "username": {
+            "type": "regex",
+            "value": ">Username</td><td style=\\\"vertical-align: bottom;\\\" >(.+?)</td>"
+          }
+        }
+      }
+    }
+  ]
+}
