@@ -26,7 +26,7 @@
       "verification": {
         "url": "https://account.easynews.com/editinfo.php",
         "method": "GET",
-        "responseType": "json",
+        "responseType": "text",
         "extract": {
           "username": {
             "type": "regex",
