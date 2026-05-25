@@ -5,44 +5,25 @@
     "languages": [
       "en"
     ],
-    "base_url": "https://b89262c192b0-stremio-easynews-addon.baby-beamup.club",
-    "response_type": "json",
+    "base_url": "https://members.easynews.com",
+    "response_type": "text",
     "movie": {
-      "query": "/%7B%22username%22%3A%22{managedAccounts.easynews.username}%22%2C%22password%22%3A%22{managedAccounts.easynews.password}%22%2C%22sort1%22%3A%22Size%22%2C%22sort1Direction%22%3A%22Descending%22%2C%22sort2%22%3A%22Relevance%22%2C%22sort2Direction%22%3A%22Descending%22%2C%22sort3%22%3A%22Date%20%26%20Time%22%2C%22sort3Direction%22%3A%22Descending%22%7D/stream/movie/{query}.json",
-      "keywords": "{imdbId}"
+      "query": "/1.0/global5/search.html?gps={query}&fex=m4v,3gp,mov,divx,xvid,wmv,avi,mpg,mpeg,mp4,mkv,avc,flv,webm&fty[]=VIDEO&spamf=1&u=1&sb=1&pby=100&pno=1&sS=0&s1=dsize&s1d=-&safeO=0",
+      "keywords": "{title} {year}"
     },
     "episode": {
-      "query": "/%7B%22username%22%3A%22{managedAccounts.easynews.username}%22%2C%22password%22%3A%22{managedAccounts.easynews.password}%22%2C%22sort1%22%3A%22Size%22%2C%22sort1Direction%22%3A%22Descending%22%2C%22sort2%22%3A%22Relevance%22%2C%22sort2Direction%22%3A%22Descending%22%2C%22sort3%22%3A%22Date%20%26%20Time%22%2C%22sort3Direction%22%3A%22Descending%22%7D/stream/series/{query}:{season}:{episode}.json",
-      "keywords": "{showImdbId}"
+      "query": "/1.0/global5/search.html?gps={query}&fex=m4v,3gp,mov,divx,xvid,wmv,avi,mpg,mpeg,mp4,mkv,avc,flv,webm&fty[]=VIDEO&spamf=1&u=1&sb=1&pby=100&pno=1&sS=0&s1=dsize&s1d=-&safeO=0",
+      "keywords": "{title} {episodeCode}"
     },
     "anime": {
-      "query": "/%7B%22username%22%3A%22{managedAccounts.easynews.username}%22%2C%22password%22%3A%22{managedAccounts.easynews.password}%22%2C%22sort1%22%3A%22Size%22%2C%22sort1Direction%22%3A%22Descending%22%2C%22sort2%22%3A%22Relevance%22%2C%22sort2Direction%22%3A%22Descending%22%2C%22sort3%22%3A%22Date%20%26%20Time%22%2C%22sort3Direction%22%3A%22Descending%22%7D/stream/series/{query}:{season}:{episode}.json",
-      "keywords": "{showImdbId}"
+      "query": "/1.0/global5/search.html?gps={query}&fex=m4v,3gp,mov,divx,xvid,wmv,avi,mpg,mpeg,mp4,mkv,avc,flv,webm&fty[]=VIDEO&spamf=1&u=1&sb=1&pby=100&pno=1&sS=0&s1=dsize&s1d=-&safeO=0",
+      "keywords": "{title} {episodeCode}"
     },
-    "json_format": {
-      "results": "streams",
-      "url": "url",
-      "title": "description",
-      "title:ops": [
-        {
-          "name": "regex",
-          "params": [
-            "(.+?)\\n"
-          ]
-        }
-      ],
-      "size": "behaviorHints.videoSize",
-      "host": "url",
-      "host:ops": [
-        {
-          "name": "regex",
-          "params": [
-            ".*@([^/]+)"
-          ]
-        }
-      ],
-      "playbackFileName": "behaviorHints.fileName",
-      "playbackFileSize": "behaviorHints.videoSize"
+    "html_parser": {
+      "row": "doc.querySelectorAll('tr[class^=\"rRow\"]')",
+      "url": "row.querySelector('td.subject a[href*=\"/dl/\"]').getAttribute('href')",
+      "title": "row.querySelector('td.subject a[href*=\"/dl/\"]').getAttribute('href').split('/').pop().split('?')[0]",
+      "size": "row.querySelector('td.fSize').textContent.trim()"
     },
     "original_package": "Easynews"
   }
